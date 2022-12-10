@@ -1,0 +1,10 @@
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/plugins
+wp-content/languages
+wp-content/uploads
+wp-content/webtoffee_iew_log
+wp-content/webtoffee_import

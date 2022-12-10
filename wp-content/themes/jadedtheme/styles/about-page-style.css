@@ -1,0 +1,50 @@
+/* style for about page */
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-img-wrapper {
+    height: 300px;
+    width: 300px;
+}
+
+.about-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-wrapper {
+    padding: 20px;
+}
+
+.about-flex-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-section-maps {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about-wrapper-maps {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+@media only screen and (max-width: 670px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-wrapper-maps {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

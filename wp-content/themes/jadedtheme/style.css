@@ -1,0 +1,23 @@
+/* Theme Name: Jaded Theme */
+
+@font-face {
+    /* SpectralSC for Small text like titels, buttons */
+    font-family: SpectralSC;
+    src: url(assets/fonts/SpectralSC-Regular.ttf);
+    font-weight: normal;
+    /* Spectral for long texts */
+    font-family: Spectral;
+    src: url(assets/fonts/Spectral-Regular.ttf);
+    font-weight: normal;
+}
+body {
+    background: #191919;
+}
+h1, h2, h3{
+    color: #FCFFE7;
+    font-family: "SpectralSC";
+}
+p, a, .a-b-r-La, .posted_in, .comment-reply-title, label, button, .submit, span{
+    color: #FCFFE7;
+    font-family: "Spectral";
+}

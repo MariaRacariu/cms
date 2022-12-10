@@ -1,0 +1,234 @@
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Multiple Sections and the whole body Section
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Giving items margin left */
+.single-product-page .product_title, .single-product-page .price, .single-product-page .woocommerce-product-details__short-description, .single-product-page .stock, .single-product-page .single_add_to_cart_button, .single-product-page .posted_in, .single-product-page .woocommerce-Reviews-title, .single-product-page .woocommerce-noreviews, .single-product-page .comment-respond, .single-product-page .woocommerce-product-rating, .single-product-page .variations, .single-product-page .quantity{
+    margin-left: 70px;
+}
+/* Giving the whole product flex to be able to put items beside each other */
+.single-product-page .product{
+    display: flex;
+    flex-flow: row wrap;
+}
+/* Underline and cursor change on hover for buttons */
+.single-product-page .single_add_to_cart_button:hover, .single-product-page .submit:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Header Section, Left Section
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Giving order to the description/summary part so it comes in front of the gallery, otherwise the gallery is first by default and flex 50 so it takes up half of the page */
+.single-product-page .summary{
+    order: -1;
+    flex: 50%;
+}
+/* Success add to cart popup */
+.woocommerce-message{
+    background-color: #09200D;
+    border-top-color: #09200D;
+    color: white;
+}
+/* Success add to cart popup button */
+.woocommerce-message .button{
+    border: 2px solid #fff;
+    background-color: #09200D;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50px;
+    height: 20px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Error popup */
+.woocommerce-error{
+    background-color: #881218;
+    border-top-color: #881218;
+    color: #fff;
+}
+/* Error popup icon change color */
+.woocommerce-error:before{
+    color: #fff;
+}
+/* Error popup button "View cart" design */
+.woocommerce-error .button{
+    border: 2px solid #fff;
+    background-color: #881218;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50px;
+    height: 20px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Giving description bigger font size and a max width */
+.single-product-page .woocommerce-product-details__short-description{
+    max-width: 600px;
+    font-size: large;
+}
+/* Design for Add To Cart btn */
+.single-product-page .single_add_to_cart_button{
+    border: 2px solid #09200D;
+    background-color: #09200D;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+}
+/* Padding for category */
+.single-product-page .product_meta{
+    padding-top: 25px;
+}
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Header Section, Right Section
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Flex for gallery */
+.single-product-page .woocommerce-product-gallery{
+    display: flex;
+    background-color: blueviolet;
+    flex: 50%;
+    justify-content: center;
+}
+
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Additional Information
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Giving the 'Additional information' flex 100 so it's on it's own row */
+.single-product-page .add-info{
+    flex: 100%;
+}
+
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Reviews
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Giving Reviews it's own row */
+.single-product-page .woocommerce-Reviews{
+    flex: 100%;
+    padding-top: 50px;
+}
+/* Added underline to make user focus on the text */
+.single-product-page .woocommerce-noreviews{
+    text-decoration: underline;
+}
+/* Customer Review */
+.single-product-page .review {
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* Padding so it shows it's different from the text above */
+.single-product-page .comment-form-rating{
+    padding-top: 25px;
+}
+/* Giving the 'rate' numbers bigger font and circle outline, removing text underline. Gave padding left and right to make a perfect circle */
+.single-product-page .star-1, .single-product-page .star-2, .single-product-page .star-3, .single-product-page .star-4, .single-product-page .star-5{
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px 10px 10px 10px;
+}
+/* On hover chnage for 'rate' numbers so they stand out on hover and are responsive */
+.single-product-page .star-1:hover, .single-product-page .star-2:hover, .single-product-page .star-3:hover, .single-product-page .star-4:hover, .single-product-page .star-5:hover{
+    background-color: white;
+    color: black;
+}
+/* Shows the customer the rate they have chosen, when clicked in tag gets new class called active */
+/* Focus and active do not work on this tag */
+.single-product-page .active{
+    background-color: white;
+    color: black;
+}
+/* Flex for all the comment-form-comment children so they all end up on their own rows */
+.single-product-page .comment-form-comment > *{
+    display: flex;
+}
+/* Chage textarea background to it matches the background so it gives the illusion that it is seathru and textcolor, set max height so it doesn't break the rest of the design when there is a long review */
+.single-product-page .textarea-review{
+    background-color: #191919;
+    width: 500px;
+    color:#FCFFE7;
+    font-size: 16px;
+    max-height: 150px;
+}
+/* Changed the submit button design to match the rest */
+.single-product-page .submit{
+    border: 2px solid #09200D;
+    background-color: #09200D;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 100px;
+}
+/* Hide Review Profile Images */
+.single-product-page .comment_container img, .single-product-page .woocommerce-review__dash{
+    display: none;
+}
+/* Hide the ol tag numbers list */
+.single-product-page .commentlist{
+    list-style-type: none;
+}
+.single-product-page .comment-text{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+}
+.single-product-page .star-rating{
+    flex: 100%;
+}
+.single-product-page .meta{
+    order: -1;
+}
+.single-product-page .woocommerce-review__author{
+    font-size: 20px;
+}
+.single-product-page .woocommerce-review__published-date{
+    font-size: 13px;
+}
+.single-product-page .description{
+    flex:100%;
+}
+
+/************************************************************************************************************** 
+---------------------------------------------------------------------------------------------------------------
+Related Products
+---------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************/
+
+/* Giving Related products it's own row */
+.single-product-page .related{
+    background-color: rgb(139, 46, 46);
+    flex: 100%;
+}
+/* Making products a flex to it can all be on one line */
+.single-product-page .related .products{
+    display: flex;
+    flex-flow: row wrap;
+}
+/* Giving button flex 100 because it ends up at the top of the post and it's own flex to it goes to the right side of the product */
+.single-product-page .related .add_to_cart_button{
+    flex: 100%;
+    display: flex;
+    justify-content: right;
+}

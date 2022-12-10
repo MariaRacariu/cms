@@ -1,0 +1,56 @@
+/* Contact */
+
+.contactHeader{
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+}
+
+.contactForm > h4{
+    color: #FCFFE7;
+    font-family: "Spectral";
+}
+
+.contactForm > input{
+    background-color: transparent;
+    color: #FCFFE7;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #FCFFE7;
+    width: 300px;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+.contactForm > textarea{
+    background-color: transparent;
+    color: #FCFFE7;
+    border: 1px solid #FCFFE7;
+    width: 500px;
+    font-size: medium;
+    height: 120px;
+}
+.contactButtom{
+    background-color: transparent;
+    border: 1px solid #FCFFE7;
+    border-radius: 14px;
+    height: 28px;
+    width: 75px;
+    color: #FCFFE7;
+    font-family: "Spectral";
+    margin-top: 20px;
+}
+.contactButtom:hover{
+    background-color: grey;
+
+}
+.contactWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.contactImage{
+    height: 350px;
+    width: auto;
+}
